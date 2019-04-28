@@ -64,9 +64,11 @@ and whether updates are carried through to the underlying file. You can read abo
  have no any file an map directly to memory:
 	`uintptr(fd)`
 
-7. And the last parameter, offset. You can OS parameter by writing simple program in C:
- 	size_t page_size = (size_t) sysconf (_SC_PAGESIZE);
-    printf("%lu", page_size);
+7. And the last parameter, offset. You can check OS parameter by writing simple program in C:
+ 	```C
+	size_t page_size = (size_t) sysconf (_SC_PAGESIZE);
+	printf("%lu", page_size);
+	```
 But we provide 0 because we want to map all file into memory:
 	
 	`0`
