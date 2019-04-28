@@ -10,7 +10,8 @@ And std slice:
 `GC time average 10.2ms`
 
 Documentation:
-It uses mmap() syscall to map file into the memory. The program works only in POSIX compatible systems (not Windows)
+It uses mmap() syscall to map file into the memory. The program works only in POSIX compatible systems (not Windows).
+
 Links to full documentation:
 
 http://man7.org/linux/man-pages/man2/mmap.2.html
