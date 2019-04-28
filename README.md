@@ -1,5 +1,5 @@
 hidden-slice is a package that could help with allocation of big slices with pointers which hidden from golang GC.
-All test and benchmarks contains in slice_test.go package.
+All test and benchmarks are placed in slice_test.go package.
 Main purpose is to define and manage slice which contains a pointers to elements w/o affecting GC time.
 As for example, average GC time when create memory mapped slice:
 
