@@ -18,12 +18,11 @@ https://www.gnu.org/software/libc/manual/html_node/Memory_002dmapped-I_002fO.htm
 
 Description:
 
-First of all we need to know size of one element to allocate proper amount of memory for all elements
-size := unsafe.Sizeof(&UserDefined{})
+First of all we need to know size of one element to allocate proper amount of memory for all elements:
 
-We use syscall with 6 parameters
-    
-    syscall.Syscall6
+`size := unsafe.Sizeof(&UserDefined{})`
+
+We use syscall with 6 parameters: `syscall.Syscall6`
 
 1. Specify type of syscall  
 	`syscall.SYS_MMAP`
