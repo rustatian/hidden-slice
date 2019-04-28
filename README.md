@@ -1,4 +1,6 @@
-hidden-slice is a package that could help with allocation of big slices with pointer.
+hidden-slice is a package that could help with allocation of big slices with pointers which hidden from golang GC.
+All test and benchmarks contains in slice_test.go package.
+Main purpose is to define and manage slice which contains a pointers to elements w/o affecting GC time.
 It uses mmap() syscall to map file into the memory. Works only in POSIX compatible systems (not Windows)
 Links to full documentation:
 
