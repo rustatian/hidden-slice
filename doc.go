@@ -27,7 +27,7 @@ place the mapping; on Linux, the kernel will pick a nearby page boundary (but al
 specified by /proc/sys/vm/mmap_min_addr) and attempt to create the mapping there.  If another mapping already exists
 there, the kernel picks a new address that may or may not depend on the hint. The address of the new mapping is
 returned as the result of the call
-
+	0
 3. Needed size of memory simply calculated by multiplying number of elements by size of 1 element
 	uintptr(len)*size
 
