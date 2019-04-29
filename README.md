@@ -36,7 +36,7 @@ specified by /proc/sys/vm/mmap_min_addr) and attempt to create the mapping there
 there, the kernel picks a new address that may or may not depend on the hint. The address of the new mapping is
 returned as the result of the call
 
-3. The required size of memory simply calculated by multiplying number of elements by size of 1 element
+3. The required size of memory simply calculated by multiplying number of elements by size of one element
     
     `uintptr(len)*size`
 
