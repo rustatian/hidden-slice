@@ -1,4 +1,4 @@
-hidden-slice is a package that could help with allocation of big slices with pointers which hidden from golang GC.
+hidden-slice is a package that can help with allocation of big slices with pointers which hidden from golang GC.
 All test and benchmarks are collected in slice_test.go package.
 Main purpose is to define and manage slice which contains a pointers to elements w/o affecting GC time.
 As for example, average GC time when create memory mapped slice:
@@ -36,7 +36,7 @@ specified by /proc/sys/vm/mmap_min_addr) and attempt to create the mapping there
 there, the kernel picks a new address that may or may not depend on the hint. The address of the new mapping is
 returned as the result of the call
 
-3. Needed size of memory simply calculated by multiplying number of elements by size of 1 element
+3. The required size of memory simply calculated by multiplying number of elements by size of 1 element
     
     `uintptr(len)*size`
 
