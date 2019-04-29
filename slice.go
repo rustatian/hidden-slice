@@ -90,7 +90,9 @@ type UserDefined struct {
 func makeCustomSlice(len int) []*UserDefined {
 	fd := -1
 
-	size := unsafe.Sizeof(&UserDefined{})
+	size := unsafe.Sizeof(&UserDefined{
+		1, "whatever", true,
+	})
 	data, _, errno := syscall.Syscall6(
 		syscall.SYS_MMAP,
 		0,

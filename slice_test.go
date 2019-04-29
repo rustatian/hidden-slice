@@ -20,7 +20,7 @@ func Benchmark_FunSlice(b *testing.B) {
 func Benchmark_NoNFunSlice(b *testing.B) {
 	b.ReportAllocs()
 	for n := 0; n < b.N; n++ {
-		a := make([]*int, sliceLen, sliceLen)
+		a := make([]*int, sliceLen)
 		_ = a
 	}
 }
@@ -44,7 +44,7 @@ func Test_GCAverageTimeSyscall(t *testing.T) {
 }
 
 func Test_GCAverageTimeDirect(t *testing.T) {
-	slice := make([]*int, sliceLen, sliceLen)
+	slice := make([]*int, sliceLen)
 
 	for i := 0; i < 10; i++ {
 		start := time.Now()
@@ -57,7 +57,7 @@ func Test_GCAverageTimeDirect(t *testing.T) {
 }
 
 func Test_UserDefinedStructure(t *testing.T) {
-	slice := make([]*UserDefined, sliceLen, sliceLen)
+	slice := make([]*UserDefined, sliceLen)
 
 	for i := 0; i < 10; i++ {
 		start := time.Now()
