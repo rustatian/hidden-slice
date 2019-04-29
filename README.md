@@ -84,5 +84,3 @@ address to memory, and len and cap parameters
 		Cap:  len,
 	}
 ```
-
- */
