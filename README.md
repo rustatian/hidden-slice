@@ -73,7 +73,7 @@ and whether updates are carried through to the underlying file. You can read abo
 But we provide `0` because we want to map entire file into memory:
 
 8. Slice converting. We simply provide to slice basic structure (every slice in golang consists of "SliceHeader") our
-address to memory, and len and cap parameters
+address to memory, and `len` and `cap` arguments
 
 ```go
 	slice := SliceHeader{
