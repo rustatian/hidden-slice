@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/ValeryPiashchynski/hidden-slice.svg?branch=master)](https://travis-ci.com/ValeryPiashchynski/hidden-slice)
+[![Build Status](https://travis-ci.com/48d90782/hidden-slice.svg?branch=master)](https://travis-ci.com/ValeryPiashchynski/hidden-slice)
 
 hidden-slice is a package that can help with allocation of big slices with pointers which hidden from golang GC.
 All test and benchmarks are collected in slice_test.go package.

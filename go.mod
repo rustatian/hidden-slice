@@ -1,3 +1,3 @@
-module github.com/ValeryPiashchynski/hidden-slice
+module github.com/48d90782/hidden-slice
 
-go 1.12
+go 1.14
