@@ -50,7 +50,7 @@ printf("%lu", page_size);
 But we provide `0` because we want to map entire file into memory:  
 8. Slice converting. We simply provide to slice basic structure (every slice in golang consists of "SliceHeader") our
 address to memory, and `len` and `cap` arguments  
-```go
+```golang
 	slice := SliceHeader{
 		Data: data,
 		Len:  len,
